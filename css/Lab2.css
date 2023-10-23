@@ -1,0 +1,146 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+  ul {
+    list-style: none;
+  }
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+
+  .lab{
+    background-color: #1f2021;
+  }
+  
+  header {
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 97px;
+  }
+
+  header .logo{
+
+    padding: 40px 10px;
+    display: block;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+   
+  }
+header nav {
+  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+header nav ul{
+ display: flex;
+}
+header nav ul li a {
+    padding: 20px !important;
+  }
+
+header nav ul li a {
+  padding: 40px 10px;
+  display: block;
+  color:rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
+}
+header nav ul li a.active{
+    background-color: white;
+    color: black;
+  }
+
+  .landing .text {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    padding: 50px;
+    color: white;
+    text-align: center;
+  }
+  .landing .text h1 {
+    margin: 0 0 30px;
+    font-weight:bold;
+    font-size:80px;
+  }
+  
+  .articles {
+
+   padding: 150px;
+   
+
+  }
+  .articles .container {
+   
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .articles .box {
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    color: white;
+  }
+  .articles .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+  }
+  .articles .box img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .articles .box .content {
+    padding: 20px;
+  }
+  .articles .box .content h3 {
+    margin: 0;
+    text-align: center;
+  }
